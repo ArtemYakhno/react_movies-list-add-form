@@ -18,11 +18,7 @@ export const App = () => {
         <MoviesList movies={movies} />
       </div>
       <div className="sidebar">
-        <NewMovie
-          onAdd={movie => {
-            handleAddMovie(movie);
-          }}
-        />
+        <NewMovie onAdd={handleAddMovie} />
       </div>
     </div>
   );
